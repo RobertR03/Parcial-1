@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+}
+body{
+    background-image: url(imagenes/textura1.jpg);
+    background-position:center;
+}
+#container{
+    width: 700px;
+    height: max-content;
+    background-color:rgb(28, 203, 209);
+    margin: auto;
+    position: relative;
+}
+.link-activo{
+    border-top: solid 2px #ffffff;
+    border-left: solid 2px #ffffff;
+    color: #ffffff;
+}
+header, nav, section, aside, footer{
+    width: 95%;
+    height: max-content;
+    background-color: #0deb62;
+    margin-top: 10px;
+    margin-left: 2.5%;
+    position: relative;
+}
+nav ul{
+    padding-left: 0%;
+    float: left;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    float: left;
+    padding: 1% 3% 1% 1%;
+}
+a{
+    text-decoration: none;
+    color: cyan;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+nav ul li a:hover{
+    background-color: #fffb0075;
+}
+nav{
+    background-color: #24a34a;
+    overflow: hidden;
+}
+section{
+    background-color: teal;
+    width: 75%;
+    float: left;
+    height: 300px;
+}
+aside{
+    background-color: snow;
+    width: 20%;
+    margin-left: 77.5%;
+    height: 300px;
+}
+aside img{
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    transition: 300ms;
+}
+aside img:hover{
+    border: solid 1px black;
+    border-radius: 13px;
+
+}
+footer{
+    color: #ffffff;
+    background-color: #0f0f0f;
+}
+
+h1, h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size:34pt ;
+    color: #442f0f;
+    text-align: center;
+}
+h2{
+    font-size: 20pt;
+    color: #c47713;
+}
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    color: #111111;
+}
+footer{
+    text-align: center;
+}
+@media only screen and (max-width: 600px){
+    #container{
+        width: 100%;
+    }
+    header, nav, section, aside, footer{
+        width: 100%;
+        float: none;
+        margin: 0%;
+        height: max-content;
+    }
+    aside img{
+        height: auto;
+        width: 4%;
+        margin-top: 1%;
+        margin-left: 0%;
+    }
+    aside{
+        text-align: center;
+    }
+}
